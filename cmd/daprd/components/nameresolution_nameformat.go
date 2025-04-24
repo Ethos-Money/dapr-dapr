@@ -16,10 +16,10 @@ limitations under the License.
 package components
 
 import (
-	"github.com/dapr/components-contrib/nameresolution/domainsuffix"
+	"github.com/dapr/components-contrib/nameresolution/nameformat"
 	nrLoader "github.com/dapr/dapr/pkg/components/nameresolution"
 )
 
 func init() {
-	nrLoader.DefaultRegistry.RegisterComponent(domainsuffix.NewResolver, "domainsuffix")
+	nrLoader.DefaultRegistry.RegisterComponent(nameformat.NewResolver, "nameformat")
 }
